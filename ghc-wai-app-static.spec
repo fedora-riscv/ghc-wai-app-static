@@ -7,7 +7,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        3.1.6.1
-Release:        1.git.0.b4bf0cd%{?dist}
+Release:        1%{?dist}
 Summary:        WAI application for static serving
 
 License:        MIT
