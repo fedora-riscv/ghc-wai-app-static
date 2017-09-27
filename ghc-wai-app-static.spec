@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        3.1.6.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        WAI application for static serving
 
 License:        MIT
@@ -104,6 +104,10 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
+* Wed Sep 27 2017 Elliott Sales de Andrade <quantum.analyst@gmail.com> 3.1.6.1-2
+- Update to latest spec template.
+- Fix description.
+
 * Fri Jul 21 2017 Elliott Sales de Andrade <quantum.analyst@gmail.com> 3.1.6.1-1
 - Update to latest release.
 
