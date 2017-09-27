@@ -52,8 +52,8 @@ BuildRequires:  ghc-temporary-devel
 # End cabal-rpm deps
 
 %description
-API docs and the README are available at
-<http://www.stackage.org/package/wai-app-static>.
+WAI application for static serving. Also provides some helper functions and
+datatypes for use outside of WAI.
 
 
 %package devel
