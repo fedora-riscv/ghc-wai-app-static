@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        3.1.6.1
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        WAI application for static serving
 
 License:        MIT
@@ -46,6 +46,7 @@ BuildRequires:  ghc-warp-devel
 BuildRequires:  ghc-zlib-devel
 %if %{with tests}
 BuildRequires:  ghc-hspec-devel
+BuildRequires:  ghc-mockery-devel
 BuildRequires:  ghc-network-devel
 BuildRequires:  ghc-temporary-devel
 %endif
@@ -78,8 +79,7 @@ This package provides the Haskell %{pkg_name} library development files.
 
 %install
 %ghc_lib_install
-
-%ghc_fix_dynamic_rpath warp
+%ghc_fix_rpath %{pkgver}
 
 
 %check
@@ -104,6 +104,9 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
+* Fri Oct 20 2017 Jens Petersen <petersen@fedoraproject.org> - 3.1.6.1-3
+- rebuild
+
 * Wed Sep 27 2017 Elliott Sales de Andrade <quantum.analyst@gmail.com> 3.1.6.1-2
 - Update to latest spec template.
 - Fix description.
