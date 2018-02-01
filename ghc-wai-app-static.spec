@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        3.1.6.1
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        WAI application for static serving
 
 License:        MIT
@@ -113,7 +113,7 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
-* Fri Jan 26 2018 Jens Petersen <petersen@redhat.com> - 3.1.6.1-4
+* Thu Feb  1 2018 Jens Petersen <petersen@redhat.com> - 3.1.6.1-5
 - rebuild
 
 * Fri Oct 20 2017 Jens Petersen <petersen@fedoraproject.org> - 3.1.6.1-3
