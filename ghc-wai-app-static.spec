@@ -7,8 +7,8 @@
 %bcond_with tests
 
 Name:           ghc-%{pkg_name}
-Version:        3.1.6.1
-Release:        6%{?dist}
+Version:        3.1.6.2
+Release:        1%{?dist}
 Summary:        WAI application for static serving
 
 License:        MIT
@@ -19,7 +19,6 @@ BuildRequires:  ghc-Cabal-devel
 BuildRequires:  ghc-rpm-macros
 # Begin cabal-rpm deps:
 BuildRequires:  chrpath
-BuildRequires:  ghc-blaze-builder-devel
 BuildRequires:  ghc-blaze-html-devel
 BuildRequires:  ghc-blaze-markup-devel
 BuildRequires:  ghc-bytestring-devel
@@ -107,6 +106,9 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
+* Mon Jul 09 2018 Elliott Sales de Andrade <quantum.analyst@gmail.com> - 3.1.6.2-1
+- update to 3.1.6.2
+
 * Wed Feb 07 2018 Fedora Release Engineering <releng@fedoraproject.org> - 3.1.6.1-6
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild
 
