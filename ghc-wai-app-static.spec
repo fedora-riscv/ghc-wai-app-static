@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        3.1.6.2
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        WAI application for static serving
 
 License:        MIT
@@ -114,6 +114,9 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
+* Thu Jul 25 2019 Fedora Release Engineering <releng@fedoraproject.org> - 3.1.6.2-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
+
 * Sun Feb 17 2019 Jens Petersen <petersen@redhat.com> - 3.1.6.2-5
 - refresh to cabal-rpm-0.13
 
