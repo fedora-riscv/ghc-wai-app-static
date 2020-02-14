@@ -1,6 +1,6 @@
 name:            wai-app-static
-version:         3.1.6.3
-x-revision: 3
+version:         3.1.7.1
+x-revision: 1
 license:         MIT
 license-file:    LICENSE
 author:          Michael Snoyman <michael@snoyman.com>
@@ -103,7 +103,7 @@ test-suite runtests
                    , temporary
                    , mockery
                    -- , containers
-  ghc-options:   -Wall
+    ghc-options:   -Wall
 
 source-repository head
   type:     git
