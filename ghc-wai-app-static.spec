@@ -130,11 +130,11 @@ cp -bp %{SOURCE1} %{pkg_name}.cabal
 # Begin cabal-rpm files:
 %license LICENSE
 # End cabal-rpm files
+%{_bindir}/warp
 
 
 %files devel -f %{name}-devel.files
 %doc ChangeLog.md README.md
-%{_bindir}/warp
 
 
 %if %{with haddock}
@@ -151,6 +151,7 @@ cp -bp %{SOURCE1} %{pkg_name}.cabal
 %changelog
 * Fri Feb 14 2020 Jens Petersen <petersen@redhat.com> - 3.1.7.1-1
 - update to 3.1.7.1
+- move warp tool to the base package
 
 * Tue Jan 28 2020 Fedora Release Engineering <releng@fedoraproject.org> - 3.1.6.3-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
