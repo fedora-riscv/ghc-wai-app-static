@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        3.1.7.1
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        WAI application for static serving
 
 License:        MIT
@@ -139,6 +139,9 @@ cp -bp %{SOURCE1} %{pkg_name}.cabal
 
 
 %changelog
+* Mon Jul 27 2020 Fedora Release Engineering <releng@fedoraproject.org> - 3.1.7.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild
+
 * Fri Jul 17 2020 Jens Petersen <petersen@redhat.com> - 3.1.7.1-2
 - refresh to cabal-rpm-2.0.6
 
