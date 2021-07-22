@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        3.1.7.1
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        WAI application for static serving
 
 License:        MIT
@@ -139,6 +139,9 @@ cp -bp %{SOURCE1} %{pkg_name}.cabal
 
 
 %changelog
+* Thu Jul 22 2021 Fedora Release Engineering <releng@fedoraproject.org> - 3.1.7.1-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_35_Mass_Rebuild
+
 * Tue Jan 26 2021 Fedora Release Engineering <releng@fedoraproject.org> - 3.1.7.1-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild
 
