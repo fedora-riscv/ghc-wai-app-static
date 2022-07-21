@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        3.1.7.3
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        WAI application for static serving
 
 License:        MIT
@@ -142,6 +142,9 @@ cp -bp %{SOURCE1} %{pkg_name}.cabal
 
 
 %changelog
+* Thu Jul 21 2022 Fedora Release Engineering <releng@fedoraproject.org> - 3.1.7.3-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_37_Mass_Rebuild
+
 * Tue Jun 07 2022 Jens Petersen <petersen@redhat.com> - 3.1.7.3-1
 - https://hackage.haskell.org/package/wai-app-static-3.1.7.3/changelog
 
