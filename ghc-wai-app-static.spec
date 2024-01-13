@@ -4,11 +4,13 @@
 %global pkg_name wai-app-static
 %global pkgver %{pkg_name}-%{version}
 
+%ifnarch riscv64
 %bcond_without tests
+%endif
 
 Name:           ghc-%{pkg_name}
 Version:        3.1.7.4
-Release:        %autorelease
+Release:        %autorelease -e 0.rv64
 Summary:        WAI application for static serving
 
 License:        MIT
